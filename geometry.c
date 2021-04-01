@@ -38,6 +38,11 @@ void perimeter_and_area(char* str, int max_symb)
     printf("area = %.3f\nperimeter = %.3f\n", area, perimeter);
 }
 
+void cirlce_output(char* str)
+{
+    fputs(str, stdout);
+}
+
 int main()
 {
     int max_symb = 40;
@@ -47,5 +52,6 @@ int main()
     fgets(sourse_str, max_symb, mf);
     correct_spelling(sourse_str, max_symb);
     perimeter_and_area(sourse_str, max_symb);
+    cirlce_output(sourse_str);
     return 0;
 }
